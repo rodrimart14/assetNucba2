@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/432e6dcc16.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section class="cardSection">
       <div class="card1">
+        <i class="far fa-times-circle closeCard"></i>
         <h2>¿Cómo te sentis con el soporte de Federico?</h2>
-        <div>
+        <div class="calificationContainer">
           <input type="radio" name="puntaje" id="1" />
+          <label for="1"><div>
+            <p>5</p>
+        </div></label>
           <input type="radio" name="puntaje" id="2" />
+          <label for="2"><div>
+            <p>4</p>
+        </div></label>
           <input type="radio" name="puntaje" id="3" />
+          <label for="3"><div>
+            <p>3</p>
+        </div></label>
           <input type="radio" name="puntaje" id="4" />
+          <label for="4"><div>
+            <p>2</p>
+        </div></label>
           <input type="radio" name="puntaje" id="5" />
+          <label for="5"><div>
+            <p>1</p>
+        </div></label>
         </div>
         <div class="satisfaction">
           <p>Bastante Insatisfecho</p>
@@ -26,7 +43,10 @@
           <label for="terminos">Acepto los términos y uso</label>
         </div>
         <hr />
-        <button class="button">SIGUIENTE</button>
+        <button class="button">
+            <p>SIGUIENTE</p>
+            <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
     </section>
   </body>

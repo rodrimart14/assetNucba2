@@ -13,8 +13,9 @@ body {
 :root{
     --conteiner: #ffffff;
     --font: #000000;
-    --buton: #3e425c45;
+    --buton: #151a41;
     --radio: #ff0099;
+    --bordeCaja: 1px solid rgba(21, 26, 65, 0.5);
 }
 
 .cardSection {
@@ -37,6 +38,54 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    position: relative;
+}
+
+.closeCard {
+    font-size: 40px;
+    color: var(--buton);
+    opacity: 0.4;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.card1 h2 {
+    color: var(--buton);
+    font-size: 23px;
+    font-weight: bolder;
+    width: 95%;
+}
+
+.calificationContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row-reverse;
+}
+
+.calificationContainer input {
+    display: none;
+}
+
+.calificationContainer label div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 50px;
+    border-radius: 5px;
+    border: var(--bordeCaja);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+input:checked + label div {
+    background-color: var(--radio);
+    color: var(--conteiner);
+    box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.537);
+    border: none;
 }
 
 .satisfaction {
@@ -53,18 +102,33 @@ body {
 }
 
 .terms {
+    display: flex;
+    gap: 20px;
     width: 100%;
+    padding: 10px;
+}
+
+.terms input {
+    -webkit-transform: scale(2);
+    border: var(--bordeCaja);
 }
 
 .card1 hr {
-    border: 1px solid var(--buton);
+    border: var(--bordeCaja);
     width: 100%;
 }
 
 
 .button {
+    display: flex;
+    gap: 5px;
     padding: 15px 150px;
     background-color: transparent;
     cursor: pointer;
-    border: 1px solid var(--buton);
+    border: var(--bordeCaja);
+    font-weight: bolder;
+}
+
+.button:active {
+    transform: translateY(2px);
 }
